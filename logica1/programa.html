@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    let ano = 2020;
+
+    mostra("Idade é " + (ano -1995));
+   
+    mostra("Idade é " + (ano -1994));
+   
+    mostra("Idade é " + (ano - 2000));
+    ano = 2010;
+
+    let idadeFlavio = ano -1995;
+    let idadeJoaquim = ano - 1994;
+    let idadeBarney = ano - 2000;
+
+    let media = (idadeFlavio + idadeJoaquim + idadeBarney)  / 3;
+
+    mostra("A média é: " + Math.round(media));
+
+</script>
